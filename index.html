@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="atmContainer">
+            <div class="screen">
+              <div class="title">Texas Trust</div>
+              <div class="displayContainer">
+                <div class="btnLeft">
+                  <div class="btn" id="a1" onclick="check_balance()"></div>
+                  <div class="btn" id="a2" onclick="withdraw()"></div>
+                  <div class="btn" id="a3" onclick=""></div>
+                </div>
+                <div class="displayScreen">
+                  <div class="hiddenScrn">
+                    <div class="slotOne" id="selectora"></div>
+                    <div class="slotTwo" id="selectorb"></div>
+                  </div>
+                  <div class="hiddenScrn">
+                    <div class="slotOne" id="selectorc"></div>
+                    <div class="slotTwo" id="selectord"></div>
+                  </div>
+                  <div class="hiddenScrn">
+                    <div class="slotOne" id="selectore"></div>
+                    <div class="slotTwo" id="selectorf"></div>
+                  </div>
+                </div>
+        
+                <div class="btnRight">
+                  <div class="btn" id="a4" onclick=""></div>
+                  <div class="btn" id="a5" onclick="deposit()"></div>
+                  <div class="btn" id="a6" onclick=""></div>
+                </div>
+              </div>
+              <div class="cardInsert">
+                <div class="receiptHolder"></div>
+                ​
+                <div class="cardNsurt" onclick="initProcess()">Insert Card</div>
+              </div>
+              <!-- -----keypad -->
+              <div class="keypad">
+                <div class="row">
+                  <div id="one" class="key">1</div>
+                  <div id="two" class="key">2</div>
+                  <div id="three" class="key">3</div>
+                  <div id="cancel" class="key">Cancel</div>
+                </div>
+                <div class="row">
+                  <div id="four" class="key">4</div>
+                  <div id="five" class="key">5</div>
+                  <div id="six" class="key">6</div>
+                  <div id="clear" class="key">Clear</div>
+                </div>
+                <div class="row">
+                  <div id="seven" class="key">7</div>
+                  <div id="eight" class="key">8</div>
+                  <div id="nine" class="key">9</div>
+                  <div id="enter" class="key" onclick="shehroze()">Enter</div>
+                </div>
+                <div class="row">
+                  <div class="key"></div>
+                  <div id="zero" class="key">0</div>
+                  <div class="key"></div>
+                  <div class="key"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
